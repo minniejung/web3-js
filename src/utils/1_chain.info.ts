@@ -1,4 +1,4 @@
-import { web3 } from './0_web3.setting';
+import { web3 } from "./0_web3.setting";
 
 export const getChainId = async () => {
   /*
@@ -7,7 +7,7 @@ export const getChainId = async () => {
         - getChainId는 비동기 작업이므로 'await'로 함수를 처리합니다.
   */
 
-  const chainId = FILL_ME_IN;
+  const chainId = await web3.eth.getChainId();
 
   return chainId;
 };
